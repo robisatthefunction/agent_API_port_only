@@ -92,16 +92,16 @@ api:
 ##
 ## admin service configuration
 ##
-admin:
+##admin:
     ## http listener port
-    port: "8088"
+##    port: "8088"
 ##
 ## webhook service receives update notifications to your Optimizely project. Receipt of the webhook will
 ## trigger an immediate download of the datafile from the CDN
 ##
-webhook:
+##webhook:
     ## http listener port
-    port: "8089"
+##    port: "8089"
 #    ## a map of Optimizely Projects to one or more SDK keys
 #    projects:
 #        ## <project-id>: Optimizely project id as an integer
@@ -139,21 +139,21 @@ client:
     userProfileService:
       default: ""
       services:
-        # in-memory: 
+        # in-memory:
         #   capacity: 0
         #   storageStrategy: "fifo"
-        # redis: 
+        # redis:
         #   host: "localhost:6379"
         #   password: ""
         #   database: 0
-        # rest: 
+        # rest:
         #   host: "http://localhost"
         #   lookupPath: "/ups/lookup"
         #   lookupMethod: "POST"
         #   savePath: "/ups/save"
         #   saveMethod: "POST"
         #   userIDKey: "user_id"
-        #   headers: 
+        #   headers:
         #     Content-Type: "application/json"
         #     Auth-Token: "12345"
 
